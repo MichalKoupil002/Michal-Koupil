@@ -10,18 +10,19 @@ import time
 import random
 
 
+
 your_name = input("Welcome to rock, paper, scissors! Enter Your name:")
 time.sleep(1)
-print("welcome" + your_name)
+print("welcome " + your_name)
 time.sleep(1)
 
 
 
+while True: 
+    rps = input("what's it gonna be? rock, paper or scissors?")    
 
-rps = input("what's it gonna be? rock, paper or scissors?")    
 
-
-def main(rps):
+    def main(rps):
         
         list1 = ['rock', 'paper', 'scissors']
         contra = random.choice(list1)
@@ -56,7 +57,7 @@ def main(rps):
             print('scissors cut paper, you lose!')
 
 
-main(rps)
+    main(rps)
         
         
 
